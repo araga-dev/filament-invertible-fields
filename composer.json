@@ -1,0 +1,33 @@
+{
+    "name": "araga-dev/filament-invertible-fields",
+    "description": "Invertible (include/except) fields and table filters for Filament 4 (MultiSelect & TextInput).",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Araga\\FilamentInvertibleFields\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Araga\\FilamentInvertibleFields\\Providers\\FilamentInvertibleFieldsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^4.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0",
+        "laravel/pint": "^1.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "lint": "vendor/bin/pint",
+        "stan": "vendor/bin/phpstan analyse"
+    }
+}
